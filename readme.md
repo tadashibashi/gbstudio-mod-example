@@ -27,11 +27,11 @@ Example:
 
 `make TARGET=/path/to/rom.gb SONG=/path/to/song.mod`
 
-## Workflow Suggestion
+## Composer Workflow Suggestion
 
 You might find it useful to use Emulicious' (Game Boy emulator) automatic ROM reload feature, so that your song gets reloaded everytime you rebuild the ROM. 
 
-In the game ROM you can press start to stop the music.
+When playing the ROM, you can press start to stop the music.
 
 ## Final Remarks
 
