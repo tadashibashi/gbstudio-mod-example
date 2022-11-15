@@ -3,7 +3,7 @@ Compiles your .mod song file into a playable Game Boy ROM, using the same toolch
 
 This incorporates [RichardULZ](https://github.com/RichardULZ)'s excellent modifications to GBT-Player, found in this [GB Studio pull request](https://github.com/chrismaltby/gb-studio/pull/505). It adds pitch envelopes, enables wider noise timbres, adds subtle restructuring of pitch slides, and reduces pops.
 
-For information on composing .mod files for this special version of gbt-player, please read the [GB Studio docs](https://www.gbstudio.dev/docs/assets/music/music-gbt). The main repository can be found [here](https://github.com/chrismaltby/gb-studio).
+For information on composing .mod files for this special version of GBT-Player, please read the [GB Studio docs](https://www.gbstudio.dev/docs/assets/music/music-gbt). The main repository can be found [here](https://github.com/chrismaltby/gb-studio).
 
 ## Requirements
 - GCC compiler and Make
@@ -37,4 +37,4 @@ In the game ROM you can press start to stop the music.
 
 ## Final Remarks
 
-The great original GBT-Player by Antonio Niño Díaz can be found [here](https://github.com/AntonioND/gbt-player), although it is not fully compatible with GB Studio .mod files, due to Rulz's excellent additions.
+The great original GBT-Player by Antonio Niño Díaz can be found [here](https://github.com/AntonioND/gbt-player), although it is not fully compatible with GB Studio .mod files, due to RichardULZ's excellent additions.
