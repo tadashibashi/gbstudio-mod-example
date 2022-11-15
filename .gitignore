@@ -4,4 +4,4 @@ lib/gbdk
 .vscode/
 
 .DS_Store
-song.mod
+*.mod
