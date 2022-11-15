@@ -1,7 +1,7 @@
 # GB Studio GBT-Player MOD Example
 Compiles your .mod song file into a playable Game Boy ROM, using the same toolchain as GB Studio 3.
 
-This incorporates RichardULZ's excellent modifications to GBT-Player, found in this [GB Studio pull request](https://github.com/chrismaltby/gb-studio/pull/505). It adds pitch envelopes, enables wider noise timbres, adds subtle restructuring of pitch slides, and reduces pops.
+This incorporates [RichardULZ](https://github.com/RichardULZ)'s excellent modifications to GBT-Player, found in this [GB Studio pull request](https://github.com/chrismaltby/gb-studio/pull/505). It adds pitch envelopes, enables wider noise timbres, adds subtle restructuring of pitch slides, and reduces pops.
 
 For information on composing .mod files for this special version of gbt-player, please read the [GB Studio docs](https://www.gbstudio.dev/docs/assets/music/music-gbt). The main repository can be found [here](https://github.com/chrismaltby/gb-studio).
 
