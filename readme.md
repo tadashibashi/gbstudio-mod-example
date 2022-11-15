@@ -1,7 +1,7 @@
 # GB Studio MOD Music Example
 A minimal example that compiles your .mod song file into a playable Game Boy ROM, using the same toolchain as GB Studio 2(beta 5) and onward.
 
-This incorporates [RichardULZ](https://github.com/RichardULZ)'s excellent modifications to GBT Player, aka. gbt-rulz, found in this [GB Studio pull request](https://github.com/chrismaltby/gb-studio/pull/505). It adds pitch envelopes, enables wider noise timbres, adds subtle restructuring of pitch slides, and reduces pops.
+This incorporates [RichardULZ](https://github.com/RichardULZ)'s excellent modifications to GBT Player (gbt-rulz) found in this [GB Studio pull request](https://github.com/chrismaltby/gb-studio/pull/505). It adds pitch envelopes, enables wider noise timbres, adds subtle restructuring of pitch slides, and reduces pops.
 
 For information on composing .mod files for this special version of GBT Player, please read the [GB Studio docs](https://www.gbstudio.dev/docs/assets/music/music-gbt), and watch this [tutorial](https://www.youtube.com/watch?v=Qz7z7yWn_5w) by AJ Booker.
 Composer Scott Semanski makes amazing music with this driver, demonstrating its full features, which can be found on his [Twitter](https://twitter.com/ScottSemanski).
