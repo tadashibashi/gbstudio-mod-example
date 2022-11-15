@@ -1,5 +1,5 @@
 # GB Studio MOD Music Example
-A minimal example that compiles your .mod song file into a playable Game Boy ROM, using the same toolchain as GB Studio 3.
+A minimal example that compiles your .mod song file into a playable Game Boy ROM, using the same toolchain as GB Studio 2(beta 5) and onward.
 
 This incorporates [RichardULZ](https://github.com/RichardULZ)'s excellent modifications to GBT Player, aka. gbt-rulz, found in this [GB Studio pull request](https://github.com/chrismaltby/gb-studio/pull/505). It adds pitch envelopes, enables wider noise timbres, adds subtle restructuring of pitch slides, and reduces pops.
 
