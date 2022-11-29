@@ -35,6 +35,7 @@
 	.area	_DATA
 
 ;-------------------------------------------------------------------------------
+.start_gbt_vars:
 
 gbt_playing::
 	.ds	1
@@ -73,6 +74,8 @@ gbt_instr:: ; Ch 1-4
 gbt_freq:: ; Ch 1-3
 	.ds	3*2
 
+__current_ch3_wave::
+__gbt_channel3_loaded_instrument::
 gbt_channel3_loaded_instrument:: ; current loaded instrument ($FF if none)
 	.ds	1
 
@@ -99,6 +102,18 @@ gbt_have_to_stop_next_step::
 gbt_update_pattern_pointers::
 	.ds 1 ; set to 1 by jump effects
 
+.end_gbt_vars:
+
+;-------------------------------------------------------------------------------
+
+	.area _GSINIT	
+
+;-------------------------------------------------------------------------------
+
+	ld	HL, #.start_gbt_vars
+	ld	C, #(.end_gbt_vars - .start_gbt_vars)
+	rst	0x28
+	
 ;-------------------------------------------------------------------------------
 
 	.area	_CODE

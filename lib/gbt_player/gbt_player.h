@@ -13,18 +13,18 @@
 
 // Plays the song pointed by data (pointer array to patterns) in given bank at
 // given initial speed.
-void gbt_play(void *data, UINT8 bank, UINT8 speed);
+void gbt_play(void *data, uint8_t bank, uint8_t speed);
 
 // Pauses or unpauses music.
 // Parameter: 1 = un-pause/resume, 0 = pause
-void gbt_pause(UINT8 pause);
+void gbt_pause(uint8_t pause);
 
 // Stops music and turns off sound system. Called automatically when the last
 // pattern ends and autoloop isn't activated.
 void gbt_stop(void);
 
 // Enables or disables autoloop
-void gbt_loop(UINT8 loop);
+void gbt_loop(uint8_t loop);
 
 // Updates player, should be called every frame.
 // NOTE: This will change the active ROM bank to 1.
@@ -34,7 +34,7 @@ void gbt_update(void);
 // NOTE: If a channel is re-enabled, it can take some time to sound OK (until
 // pan and volume are modified in the song). You should only disable unused
 // channels or channels that don't change pan or volume.
-void gbt_enable_channels(UINT8 channel_flags);
+void gbt_enable_channels(uint8_t channel_flags);
 
 #define GBT_CHAN_1 (1<<0)
 #define GBT_CHAN_2 (1<<1)

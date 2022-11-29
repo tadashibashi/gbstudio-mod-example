@@ -10,7 +10,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define DEFAULT_ROM_BANK (2)
+#define DEFAULT_ROM_BANK (255)
 #define BANK_NUM_UNBANKED 0
 
 unsigned int current_output_bank;
@@ -1065,9 +1065,17 @@ int main(int argc, char *argv[])
 
     if (current_output_bank != BANK_NUM_UNBANKED) {
         // Aaron: removed "=" since compiler complains #pragma bank=2 is not valid
+        out_write_str("#include <gbdk/platform.h>\n");
+        out_write_str("#include <stdint.h>\n");
         out_write_str("#pragma bank "); 
         out_write_dec(current_output_bank);
         out_write_str("\n\n");
+        out_write_str("\nBANKREF(");
+        out_write_str(label_name);
+        out_write_str("_Data_bank)\n");
+        out_write_str("const uint8_t ");
+        out_write_str(label_name);
+        out_write_str("_Data_bank = 0;\n\n");
     }
 
     printf("\nConverting patterns...\n");
@@ -1079,6 +1087,9 @@ int main(int argc, char *argv[])
 
     printf("\n\nPattern order...\n");
 
+    out_write_str("\nBANKREF(");
+    out_write_str(label_name);
+    out_write_str("_Data)\n");
     out_write_str("const unsigned char * const ");
     out_write_str(label_name);
     out_write_str("_Data[] = {\n");

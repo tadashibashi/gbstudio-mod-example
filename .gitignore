@@ -3,6 +3,6 @@ obj/
 lib/gbdk
 .vscode/
 .idea/
-lib/gbdk4
+lib/gbdk3
 .DS_Store
 *.mod
