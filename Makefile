@@ -27,6 +27,8 @@ SRC := main.c lib/gbt_player/gbt_player_bank.s lib/gbt_player/gbt_player.s
 $(TARGET): $(OBJ)
 	$(LCC) -Wa-l -Wl-m -Wl-j -DUSE_SFR_FOR_REG -Wl-yt1 -Wl-yo4 -Wl-ya0 -o $@ $^
 
+build: $(TARGET)
+
 # Removes everything that was built
 clean:
 	rm -f $(wildcard obj/*.o)
@@ -46,7 +48,7 @@ $(MOD2GBT): lib/mod2gbt/mod2gbt.c
 # Process the .mod with mod2gbt
 obj/output.c: $(MOD2GBT) $(SONG)
 	@mkdir -p obj
-	$(MOD2GBT) $(SONG) song 2 -o obj/output.c
+	$(MOD2GBT) $(SONG) song 2 -speed -o obj/output.c
 
 # Build song output obj file
 obj/output.o: obj/output.c

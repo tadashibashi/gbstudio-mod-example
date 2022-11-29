@@ -983,7 +983,7 @@ int main(int argc, char *argv[])
     printf("All rights reserved\n");
     printf("\n");
 
-    if ((argc < 3) || (argc > 6))
+    if ((argc < 3) || (argc > 7))
     {
         print_usage();
         return -1;

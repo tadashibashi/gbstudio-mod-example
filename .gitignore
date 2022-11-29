@@ -2,6 +2,7 @@ bin/
 obj/
 lib/gbdk
 .vscode/
-
+.idea/
+lib/gbdk4
 .DS_Store
 *.mod
